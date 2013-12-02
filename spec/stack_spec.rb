@@ -14,4 +14,9 @@ describe Stack do
       Stack.new.push 1
     end
   end
+  describe "#pop" do
+    it "has a pop method" do
+      Stack.new.should respond_to :pop
+    end
+  end
 end
