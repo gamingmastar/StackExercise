@@ -18,5 +18,13 @@ describe Stack do
     it "has a pop method" do
       Stack.new.should respond_to :pop
     end
+    it "returns nil when the stack is empty" do
+      Stack.new.pop.should be_nil
+    end
+    it "returns the last item" do
+      stack = Stack.new
+      stack.push 1
+      stack.pop.should eq 1
+    end
   end
 end
