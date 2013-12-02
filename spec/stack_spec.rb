@@ -26,5 +26,14 @@ describe Stack do
       stack.push 1
       stack.pop.should eq 1
     end
+    it "returns previously pushed items - last in, first out (LIFO)" do
+      stack = Stack.new
+      stack.push 2 
+      stack.push "Hello"
+      stack.push stack 
+      stack.pop.should eq stack
+      stack.pop.should eq "Hello"
+      stack.pop.should eq 2
+    end
   end
 end
