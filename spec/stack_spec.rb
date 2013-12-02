@@ -10,5 +10,8 @@ describe Stack do
     it "has a push method" do
       Stack.new.should respond_to :push
     end
+    it "allows an object to be pushed to it" do
+      Stack.new.push 1
+    end
   end
 end
