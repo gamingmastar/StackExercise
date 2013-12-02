@@ -1,2 +1,0 @@
-describe Stack do
-end
