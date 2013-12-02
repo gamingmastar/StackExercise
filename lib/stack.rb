@@ -1,11 +1,11 @@
 class Stack
 	def initialize
-		@empty = true
+		@contents = Array.new
 	end
 	def push(item)
-		@empty = false
+		@contents.push(item)
 	end
 	def pop
-		@empty ? nil : 1
+		@contents.pop
 	end
 end
