@@ -1,4 +1,4 @@
 class Stack
-	def push
+	def push(item)
 	end
 end
